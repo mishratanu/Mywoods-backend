@@ -8,6 +8,7 @@ const { protect } = require("../middleware/auth");
 router.post("/register", register); // POST /api/auth/register
 router.post("/login", login); // POST /api/auth/login
 
+
 // Protected route — needs a valid token (added by the `protect` middleware)
 router.get("/me", protect, getMe); // GET  /api/auth/me
 
