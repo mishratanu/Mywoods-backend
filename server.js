@@ -8,7 +8,8 @@ const express = require("express");
 const mongoose = require("mongoose");
 
 const woodRoutes = require("./routes/woods");
-const userRoutes = require("./routes/users"); // 👈 ADD THIS
+const userRoutes = require("./routes/users");
+const authRoutes = require("./routes/auth"); // 👈 ADD THIS
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -20,6 +21,7 @@ app.use(express.json());
 // Routes
 app.use("/api/woods", woodRoutes);
 app.use("/api/users", userRoutes); // 👈 ADD THIS
+app.use("/api/auth", authRoutes);
 
 // Test route
 app.get("/", (req, res) => {
