@@ -1,4 +1,4 @@
-const Wood=require("../model/Wood");
+const Wood=require("../model/woodsgit ");
 
 exports.createWood=async(req,res)=>{
     try{
