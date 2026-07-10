@@ -6,7 +6,7 @@ const{
     getWoods,
     updateWood,
     deleteWood,
-} = require("../controller/woodController");
+} = require("../controller/woodcontroller");
 
 // router.post("/",createWood);
 // router.get("/",getWoods);
